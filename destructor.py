@@ -1,12 +1,11 @@
 class FileHandler:
     def __init__(self,filename):
         self.file=open(filename,'r')
-        print(f"file is opend {filename}")
+        print(f"file {filename} is opened")
 
     def __del__(self):
-        self.file.close
-        print(f"file is closed {self.file.name}")
-
+        self.filr.close
+        print(f"file {self.file.name} is closed")
 
 handler=FileHandler('sample.txt')
 
