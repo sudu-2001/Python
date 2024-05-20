@@ -1,9 +1,11 @@
-count=0
+count = 0
 
-while count<5:
+while count < 10:
+
+    count += 1
     
-    count+=1
 
-    print("count:",count)
+    if count == 5:
+        continue
 
-    
+    print("count:", count)
