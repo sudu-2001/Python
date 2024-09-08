@@ -8,6 +8,7 @@ for char in string:
     if char in vowels:
         char.lower()
         vowel_count[char]+=1
+print(vowel_count)
         
 for vowel,count in vowel_count.items():
     if count>0:

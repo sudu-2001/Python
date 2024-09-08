@@ -1,6 +1,7 @@
 from abc import ABC,abstractmethod
 
 class shape(ABC):
+    @abstarct method
     def area(self):
         pass
 
