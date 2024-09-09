@@ -15,3 +15,4 @@ person3=person("tan",24)
 
 print(person1==person2)
 print(person1==person3)
+print(person3)
