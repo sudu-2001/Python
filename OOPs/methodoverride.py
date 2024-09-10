@@ -3,7 +3,7 @@ class employee:
         self.name=name
         self.id=id
 
-    def caluclate_salary():
+    def caluclate_salary(self):
         return f"this function is overridden"
     
 class fulltimeemployee(employee):
@@ -23,6 +23,8 @@ class contractemployee(employee):
     def caluclate_salary(self):
         print(f"salary:{self.salary}")
 
+emp=employee("bob",1)
+print(emp.caluclate_salary())
 
 ful=fulltimeemployee("sudarshan",1,12000)
 con=contractemployee("sudarshan",1,12000,4)

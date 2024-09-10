@@ -1,22 +1,20 @@
 from abc import ABC,abstractmethod
 
-class payment(ABC):
+class payment:
     @abstractmethod
-    def process_payment(self,amount:float):
+    def transaction(self,amount:float):
         pass
 
-class creditpayment(payment):
-    def process_payment(self, amount: float):
-        print(f"the amount paid is ${amount:.2f}")
-
-
-
 class paypal(payment):
-    def process_payment(self, amount: float):
-        print(f"the amount paid is ${amount:.2f}")
+    def transaction(self, amount: float):
+        print(f"amount paid:{amount}")
 
+class upi(payment):
+    def transaction(self, amount: float):
+        print(f"amount paid:{amount}")
 
-payment2=paypal()
-payment2.process_payment(1000000000000)
-payment1=creditpayment()
-payment1.process_payment(20000000)
+pay=paypal()
+up=upi()
+
+pay.transaction(200)
+up.transaction(300)
