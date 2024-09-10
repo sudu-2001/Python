@@ -1,24 +1,20 @@
 class notification:
-    def send(self,meaasge):
+    def send(self,message):
         pass
 
 class email(notification):
-    def send(self,message):
-        print(f"message:{self.message}")
+    def send(self, message):
+        print(f"message is :{message}")
 
 class whatsapp(notification):
     def send(self,message):
-        count=0
-        while count<4:
+        print(f"messgae is:{message}")
 
-            print(f"message:{self.message}")
-            count+=1
-
-def send_notification(notification,message):
-    notification.send(message)
+def notify(lang,message):
+    lang.send(message)
 
 em=email()
-wa=whatsapp()
+what=whatsapp()
 
-send_notification(em,"hi")
-send_notification(wa,"hit")
+notify(em,"hi")
+notify(what,"ji")
