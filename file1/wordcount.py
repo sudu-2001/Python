@@ -38,3 +38,20 @@ with open("name.txt",'r') as file:
 
 print(len(unique))
 
+#count the specific word in a file
+
+word=0
+
+with open("name.txt",'r') as file:
+
+    target="hello"
+
+    for line in file:
+
+        if target in line:
+
+            word+=1
+
+print(word)
+
+
