@@ -55,3 +55,20 @@ with open("name.txt",'r') as file:
 print(word)
 
 
+# replace the word in the file
+
+with open("name.txt",'r') as file:
+
+    x=file.readlines()
+
+with open("name.txt",'w') as file:
+
+    target="hello"
+
+    replace="hi"
+
+    for line in x:
+
+        words=line.replace(target,replace)
+
+        file.write(words)

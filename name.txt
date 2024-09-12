@@ -1,5 +1,6 @@
-hello 
+hi 
 Employee 
 you have benn created a satarday file
-hello world
-hello Python world
+hi world
+hi Python world
+my namemy name
