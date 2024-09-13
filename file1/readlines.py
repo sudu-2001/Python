@@ -16,6 +16,8 @@ with open("name.txt",'r') as file:
 
     linecount=0
 
+    file=file.read()
+
     for line in file:
 
         linecount+=1
