@@ -1,17 +1,20 @@
-with open("sud.txt",'r') as file:
+with open('sud.txt','r') as file:
 
-	longestword=""
+	longest=""
 
 	line=file.read()
 
 	lines=line.split()
 
-	print(line)
+	print(lines)
 
 	for c in lines:
 
-		if len(c)>len(longestword):
+		if(len(c)>len(longest)):
 
-			longestword=c
+			longest=c
 
-	print(longestword)
+
+	print("The length of longest word :",len(longest))
+
+	print("The longest word in file is :",longest)

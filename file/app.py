@@ -1,16 +1,14 @@
-with open("three.txt","a") as file:
+with open('three.txt','a') as file:
 
-	n=int(input("Enter the range of an array: "))
+	n=int(input("Enter the array range: "))
 
 	arr=[]
 
 	for i in range(0,n):
 
-		name=input("Enter the name: ")
+		i=input("The array elements are: ")
 
-		arr.append(name)
-
-	print(arr)
+		arr.append(i)
 
 	for name in arr:
 
