@@ -8,7 +8,7 @@ with open("sud.txt","r") as file:
 
 		line_count+=1
 
-		char_count+=len(lines)
+		char_count+=1
 
 print(f"The total number of lines in {file} file is:{line_count}")
 
