@@ -1,20 +1,63 @@
 from abc import ABC,abstractmethod
 
-class payment:
-    @abstractmethod
-    def transaction(self,amount:float):
-        pass
+class Car(ABC):
 
-class paypal(payment):
-    def transaction(self, amount: float):
-        print(f"amount paid:{amount}")
+	def __init__(self,brand,model,year):
 
-class upi(payment):
-    def transaction(self, amount: float):
-        print(f"amount paid:{amount}")
+		self.brand=brand
 
-pay=paypal()
-up=upi()
+		self.model=model
 
-pay.transaction(200)
-up.transaction(300)
+		self.year=year
+
+	@abstractmethod
+
+	def printdetails(self):
+
+		pass
+
+	def accelerate(self):
+
+		print("Speed Up...")
+
+	def break_up(self):
+
+		print("Slowing Down")
+
+class Hathback(Car):
+
+	def printdetails(self):
+
+		print("Brand of the car:", self.brand)
+
+		print("Model of the car:", self.model)
+
+		print("Year of release:", self.year)
+
+	def roofup(self):
+
+		print("Not available")
+
+class Suv(Car):
+
+	def printdetails(self):
+
+		print("Brand of the car:", self.brand)
+
+		print("Model of the car:", self.model)
+
+		print("Year of release:", self.year)
+
+	def roofup(self):
+
+		print("Available Opening up.")
+
+car1=Suv("TATA","Safari","2024")
+
+car1.printdetails()
+
+car1.accelerate()
+
+car1.roofup()
+
+car1.break_up()

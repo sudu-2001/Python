@@ -1,20 +1,29 @@
 class notification:
-    def send(self,message):
-        pass
 
-class email(notification):
-    def send(self, message):
-        print(f"message is :{message}")
+	def sendmessage(self,message):
+
+		pass
+
+class Email(notification):
+
+	def sendmessage(self,message):
+
+		print(f"Hi, buddy there is notification:{message}")
 
 class whatsapp(notification):
-    def send(self,message):
-        print(f"messgae is:{message}")
+
+	def sendmessage(self,message):
+
+		print(f"Hi, this is whatsapp:{message}")
 
 def notify(lang,message):
-    lang.send(message)
 
-em=email()
-what=whatsapp()
+	lang.sendmessage(message)
 
-notify(em,"hi")
-notify(what,"ji")
+em=Email()
+
+wh=whatsapp()
+
+notify(wh,"Whatsapp Update!!")
+
+notify(em,"This is from Organization")
